@@ -154,7 +154,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      本次作業是我對文生圖技術的初步應用與實踐，使用了目前功能最齊全、適合個人使用的工具——ComfyUI。透過節點式操作介面，我能夠清楚地了解每個模組的功能與連接方式，進一步建立出完整的生成流程。這種方式不僅讓我更深入理解圖像生成模型的運作邏輯，也增添了創作過程的趣味性。最後，我成功依據主題生成了芙莉蓮與辛梅爾的相關圖像，達成了此次任務目標。
+
+
     </div>
   </div>
 
@@ -170,22 +172,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 完成ComfyUI建置</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 完成芙莉蓮文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 替換模型完成辛梅爾文生圖</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,18 +197,58 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+            <img src="image.png" width="100%"/>
+        </figure>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty"> 
+      <figure>
+        <figcaption>完成芙莉蓮Checkpoint、LoRA文生圖</figcaption>
+        <a href="https://civitai.com/models/1188071?modelVersionId=1337429">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1209474/a4-test?modelVersionId=1373925">LoRA連結</a>
+        <p>1344 * 768</p>
+        <p>LoRA Strength : 1.0</p>
+        <p>Positive：Frieren from Sousou no Frieren, pure white mage robe with gold trim, robe is torn and dirt-stained, slight blood on face, scratches on cheek, messy silver hair, tired determined eyes, casting black magic, black energy swirling around hands, glowing dark magic circle, intense expression, dynamic battle pose, background of ruined battlefield, smoke and debris in the air, dramatic lighting, anime style, masterpiece, highly detailed
+        </p>
+        <p>Negative：clean clothes, pristine outfit, blue robe, gold robe, unscathed, smiling, blurry, bad hands, extra limbs, poorly drawn, low detail, low resolution,
+        </p>
+        <img src="furilen.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
 
   <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>替換Ckeckpoint、LoRA完成辛梅爾文生圖</figcaption>
+        <a href="https://civitai.com/models/820208/obsession-illustrious-xl">Checkpoint連結</a>
+        <br>
+        <a href="https://civitai.com/models/1204563?modelVersionId=1356500">LoRA連結1</a>
+        <br>
+        <a href="https://civitai.com/models/1201355/r754496-or-shiiros-styles-or-niji">LoRA連結2</a>
+        <p>1024 * 1280</p>
+        <p>LoRA1 Strength : 0.5</p>
+        <p>LoRA2 Strength : 0.45</p>
+        <p>Positive: Himmel from Frieren, intense battle stance, close-up focus on face, beautiful detailed anime face, blue short hair, serious expression, heroic blue eyes, wearing damaged white and blue armor and cloak, holding glowing sword, cinematic lighting, sparks and smoke in background, high detail, sharp features, dynamic anime style 
 
+        </p>
+        <p>Negative: blurry, low quality, lowres, out of focus, bad anatomy, extra limbs, wrong face, deformed eyes, fused face, bad proportions, distorted, glitch
+        </p>
+        <img src="shinmele.png" width="100%"/>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ------------------------------------------------>
 
 <script>
   $(function() {
