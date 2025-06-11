@@ -154,7 +154,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次嘗試用 ComfyUI 生成影片的過程非常有趣，也讓我學到了不少。原本我打算用提示詞讓系統生成一隻貓咪走路的影片，結果卻意外地生成了「貓娘」——這讓我非常驚喜也有點哭笑不得。仔細想想，這應該是因為 ComfyUI 的訓練資料庫中大多數都是以人類為主題，所以系統在理解「貓咪」這個詞彙時，潛意識裡把它和人形特徵結合了。
+
+這個小意外反而讓我對生成模型的運作原理有了更深的認識，也提醒我在設計提示詞時要更精確，或者更了解模型的偏好和局限。未來我打算嘗試更多不同的提示詞和組合，看看還能產生什麼有趣的結果。整體來說，這次的體驗讓我對 AI 生成影片的潛力充滿期待！
     </div>
   </div>
 
@@ -170,22 +172,23 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫
+</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -197,12 +200,50 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint:based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">Lora:  chibi-laugh</a><br> 
+       <td>1.Simple baseline - Comfy UI 環境設定完成</td><br>
+       <img src="1.png"  height="600"><br>
     </div>
   </div>
-
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>2.Medium baseline - 生成角色的圖片</td><br>
+       <img src="2.png"  height="600"><br>
+       <td> 使用提示詞:
+      "0": "cute cat, walking on sidewalk, sunny day, soft fur, relaxed posture",
+  "10": "cute cat, walking on sidewalk, sunny day, soft fur, relaxed posture",
+  "20": "cat walking, tail up, curious expression, sunny neighborhood, natural lighting",
+  "30": "cat walking, tail up, curious expression, sunny neighborhood, natural lighting",
+  "40": "cat walking slowly, sidewalk with trees, warm daylight, calm and elegant",
+  "50": "cat walking slowly, sidewalk with trees, warm daylight, calm and elegant",
+  "60": "cat on park path, gentle breeze, ears twitching, soft grass, relaxed vibe",
+  "70": "cat on park path, gentle breeze, ears twitching, soft grass, relaxed vibe",
+  "80": "cat walking confidently, focused gaze, sunny afternoon, soft shadows",
+  "90": "cat walking confidently, focused gaze, sunny afternoon, soft shadows",
+  "100": "cat strolling, fur fluttering slightly, warm sunlight, peaceful scene",
+  "110": "cat strolling, fur fluttering slightly, warm sunlight, peaceful scene"</td>
+    </div>
+  </div>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>3.Strong baseline - 生成完整角色動畫</td><br>
+       <img src="3.gif" ><br>
+       <td> 使用提示詞:
+      "0": "cute cat, walking on sidewalk, sunny day, soft fur, relaxed posture",
+  "10": "cute cat, walking on sidewalk, sunny day, soft fur, relaxed posture",
+  "20": "cat walking, tail up, curious expression, sunny neighborhood, natural lighting",
+  "30": "cat walking, tail up, curious expression, sunny neighborhood, natural lighting",
+  "40": "cat walking slowly, sidewalk with trees, warm daylight, calm and elegant",
+  "50": "cat walking slowly, sidewalk with trees, warm daylight, calm and elegant",
+  "60": "cat on park path, gentle breeze, ears twitching, soft grass, relaxed vibe",
+  "70": "cat on park path, gentle breeze, ears twitching, soft grass, relaxed vibe",
+  "80": "cat walking confidently, focused gaze, sunny afternoon, soft shadows",
+  "90": "cat walking confidently, focused gaze, sunny afternoon, soft shadows",
+  "100": "cat strolling, fur fluttering slightly, warm sunlight, peaceful scene",
+  "110": "cat strolling, fur fluttering slightly, warm sunlight, peaceful scene"</td>
+    </div>
+  </div>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
