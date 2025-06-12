@@ -154,7 +154,11 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的作業是使用 AI 語音辨識技術，將語音內容轉換為文字。透過實作，我對語音辨識的流程和應用有了更深的理解。實際操作的過程中，只要提供一段清晰的錄音檔，系統就能自動將內容辨識出來，並產生相對應的文字檔。這樣的技術讓我想到，在很多需要處理大量語音資料的場景中，例如訪談紀錄、線上課程、或是影片製作，都可以透過 AI 來大幅減少人工逐字輸入的時間。
+
+其中我覺得最有感的是在「字幕製作」方面的應用。以往如果要幫一段影片上字幕，可能需要邊聽邊打、重複多次確認才能完成，但現在只要有 AI 的協助，就可以快速得到初步的文字內容。即使有些辨識上的錯誤，只要稍作校正就能完成整體字幕，效率提升非常明顯。
+
+當然，這次的操作也讓我發現目前的 AI 辨識技術雖然已經很先進，但仍然會受到一些因素影響，比如語音的清晰度、背景雜音、說話者口音等。在這些條件較不理想的情況下，辨識結果可能會有誤差。不過整體來說，準確率已經相當高，未來只會越來越精準。
     </div>
   </div>
 
@@ -170,22 +174,24 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - 匯入 Google Colab 必要的模組 </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 進行Automatic Speech Recognition語音辨識並生成字幕
+</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 通過助教的影片摘要審核
+</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" ></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -197,9 +203,22 @@
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <a href="https://youtu.be/qQuNLzX90_8?si=IfzoNoQkDhYzUJ8d">Youtube影片</a><br>
+       <td>1.Simple baseline - 匯入 Google Colab 必要的模組 </td><br>
+       <img src="2.png"  width="1000" height="300"><br>
+      </div>
+  </div>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>2.Medium baseline - 進行Automatic Speech Recognition語音辨識並生成字幕</td><br>
+      <img src="3.png"  width="800" height="300"><br>
+  </div>
+  </div>
+  <div class="row hw12 bottomrow">
+    <div class="col-md-12 twenty">
+       <td>3.Strong baseline - 通過助教的影片摘要審核</td><br>
+       <img src="1.png"width="800" height="300" ><br>
+       <a href="example.txt">輸出文檔</a><br> 
     </div>
   </div>
 
